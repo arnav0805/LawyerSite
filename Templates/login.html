@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Login-Legal Lab
+        </title>
+        <link rel="stylesheet" href="/static/stylelogin.css">
+        <link rel="icon" href="pictures-used/logo.jpg">
+    </head>
+
+    <body class="bodyclass">
+        <form action="/login" method="post">
+            <script>
+                function myalert() {
+                    alert("This is a prototype , try OUR SERVICE or LOGIN option");
+                }
+            </script>
+            <center>
+                <div class="login1">
+                    <br>
+                    <br>
+                    <br>
+                    <h1>
+                        Login
+                    </h1>
+                    <br>
+                    <br>
+                    <label for="username">
+                        Username
+                    </label>
+                    <input autofocus autocomplete="on"  class="form-control mx-auto w-auto" type="email" required minlength="8" placeholder="username" name="username"> 
+                    <br>
+                    <br>
+                    <br>
+                    <label for="password">
+                        Password
+                    </label>
+                    <input autofocus  autocomplete="off" class="form-control mx-auto w-auto" type="password" name="password" required minlength="8">
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit" class="button1">
+                        Login
+                    </button>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">
+                        Remember me
+                    </label>
+                    <br>
+                    <p>
+                        don't have an account?
+                        <a href=" " onclick="myalert()">
+                            sign in
+                        </a>
+                    </p>
+                </div>
+            </center>
+        </form>
+    </body>
+
+</html>

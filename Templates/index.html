@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Legal Lab
+        </title>
+        <linK rel="stylesheet" href="/static/style.css">
+        <link rel="icon" href="pictures-used/logo.jpg">
+    </head>
+    
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <div class="reallogo">
+                    </div>
+                </div>
+                <div class="nav-aboutus">
+                    <p class="about" onclick="myalert()">
+                        About Us
+                    </p>
+                </div>
+                <div class="nav-services">
+                    <p id="serve" onclick="myalert()">
+                        Our services
+                    </p>
+                </div>
+                <div class="nav-contact">
+                    <p onclick="myalert()">
+                        Contact
+                    </p>
+                </div>
+                <div class="faq">
+                    <p onclick="myalert()">
+                        FAQ
+                    </p>
+                </div>
+                <a href="/login">
+                    <div class="nav-login">
+                        <button type="button" class="button1">
+                            login
+                        </button>
+                    </div>
+                </a>
+                <div class="nav-login2">
+                    <button class="button2" type="button" style="color: aliceblue;" onclick="myalert()">
+                        Sign In
+                    </button>
+                    <script>
+                        function myalert() {
+                            alert("This is a prototype , try OUR SERVICE or LOGIN option");
+                        }
+                    </script>
+                </div>
+            </div>
+        </header>
+        <div class="fristsection">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="heading1" style="margin-left: 20px;
+            color: #d7ae90;
+            font-size: 50px;
+            text-shadow: 0 0 3px #040404, 0 0 5px #000000;">
+                Welcome To
+            </h1>
+            <div class="container">
+                <div class="typed-out" style="margin-left: 20px;
+                color: #d7ae90;
+                font-size: 50px;
+                text-shadow: 0 0 3px #040404, 0 0 5px #000000;">
+                    Legal Lab
+                </div>
+            </div>
+            <div class="heading3">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>
+                    A One stop solution to all your legal needs 
+                </p>
+                <br>
+                <p>
+                    with the trust of the Government and a simple
+                </p>
+                <br>
+                <p>
+                    and friendly UI.
+                </p>
+            </div>
+            <div class="lowerbutton">
+                <button class="button3" type="button" style="color: rgb(255, 255, 255);border-radius: 10px;margin-top: 90px;margin-left: 40px;height: 50px;width: 120px;"
+                onclick="myalert()">
+                    About us
+                </button>
+                <button class="button4" type="button" style="color: rgb(255, 255, 255);border-radius: 10px;margin-top: 90px;margin-left: 40px;height: 50px;width: 120px;"
+                onclick="myalert()">
+                    FAQ
+                </button>
+            </div>
+        </div>
+        <div class="secondsection">
+        </div>
+        <p style="text-align: center;font-size: 30px;font-weight: bold;background-image: url(Elegant-white-background-with-shiny-lines.jpg);height: 10px;">
+            <br>
+            Our services
+        </p>
+        <div class="thirdsection">
+            <a href="/ourservice" style="text-decoration: none;">
+                <div class="ourservice1">
+                    <p style=" margin-top: 110px;color: #494747;padding-top: 110px;">
+                        Hire Lawyer
+                    </p>
+                </div>
+            </a>
+            <div class="ourservice2" onclick="myalert()">
+                <p style=" margin-top: 110px;color: #494747;">
+                    Consult a Lawyer
+                </p>
+            </div>
+        </div>
+        <h1 style="text-align: center; font-size: 30px; background-color: #ece1cf;height: 38px;padding: 20px;">
+            Top Lawyers
+        </h1>
+        <div class="fourthsection">
+            <div class="toplayerscroll">
+                <div class="toplawyer1" onclick="myalert()">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p style="font-size: 20px; font-weight: bold;">
+                        Name
+                    </p>
+                    <p style="font-size: 15px;font-weight: 500;">
+                        imformation
+                    </p>
+                </div>
+                <div class="toplawyer2" onclick="myalert()">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p style="font-size: 20px; font-weight: bold;">
+                        Name
+                    </p>
+                    <p style="font-size: 15px;font-weight: 500;">
+                        imformation
+                    </p>
+                </div>
+                <div class="toplawyer3" onclick="myalert()">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p style="font-size: 20px; font-weight: bold;">
+                        Name
+                    </p>
+                    <p style="font-size: 15px;font-weight: 500;">
+                        imformation
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="lastsection">
+            </div>
+        </footer>
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+        
+    </body>
+
+</html>
